@@ -1,0 +1,19 @@
+<! DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script src="Cki.js"></script>
+        <script>
+            var date = new Date();
+            date.setMonth(date.getMonth()+5);
+            cki.setCookie("name","mario",date);
+            cki.setCookie("age",22);
+            cki.hasCookie("name");
+            var val=cki.getCookie("name");
+            console.log(val);
+            var val2 = cki.getCookie("age");
+            console.log(val2);
+            //cki.deleteCookie("name");
+        </script>
+    </body>
+</html>
